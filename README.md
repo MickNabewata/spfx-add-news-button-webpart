@@ -50,6 +50,7 @@ You can use PnP for implement this.
 ClientSidePage.addSection() method help you to add sections on your page.  
 CanvasSection.addColumn(factor : CanvasColumnFactorType) method is used to add columns in a section.  
 CanvasColumnFactorType is defined as below.  
+  
 `export declare type CanvasColumnFactorType = 0 | 2 | 4 | 6 | 8 | 12;`  
   
 Note that the total value of CanvasColumnFactorType in one section should be 12.  
