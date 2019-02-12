@@ -42,7 +42,7 @@ This process can be implemented by any other solutions.
 (e.x. SPFx, CSOM, REST, ...)  
   
 Here is Microsoft Docs page.  
-[Customizing modern site pages]: https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/modern-experience-customizations-customize-pages#programming-modern-pages "Customizing modern site pages"  
+[Customizing modern site pages](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/modern-experience-customizations-customize-pages#programming-modern-pages "Customizing modern site pages")  
 
 ### How to create a section and webparts in news page
   
@@ -50,10 +50,12 @@ You can use PnP for implement this.
 ClientSidePage.addSection() method help you to add sections on your page.  
 CanvasSection.addColumn(factor : CanvasColumnFactorType) method is used to add columns in a section.  
 CanvasColumnFactorType is defined as below.  
+`
     /**  
     * Column size factor. Max value is 12 (= one column), other options are 8,6,4 or 0  
     */  
     export declare type CanvasColumnFactorType = 0 | 2 | 4 | 6 | 8 | 12;  
+`
   
 Note that the total value of CanvasColumnFactorType in one section should be 12.  
 Otherwise, you can not edit the created section on the web page.  
