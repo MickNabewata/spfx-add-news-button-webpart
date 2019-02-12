@@ -31,7 +31,9 @@ first, you should create a Client Side Page.
 And then, update properties of the page.  
 The minimum properties to update are below.
 
-- PromotedState
-This property should be updated to "2".
-
-To update page properties, you shold get ListItemEntityTypeFullName first.
+- PromotedState  
+This property should be updated to "2".  
+To update page properties, you shold get ListItemEntityTypeFullName first.  
+  
+This process can be implemented by any other solutions.  
+(e.x. SPFx, CSOM, REST, ...)
