@@ -15,6 +15,9 @@ gulp
 ### What can do using this sample
 
 This web part provide a button create a news.
+Note that this sample does not have the function to publish pages,  
+so if you are managing a minor version in the library,  
+be aware that the draft page will be created.
 
 **image1:Add News Page Button**  
 <kbd><img src="https://raw.githubusercontent.com/MickNabewata/spfx-add-news-button-webpart/images/2.png" /></kbd>  
