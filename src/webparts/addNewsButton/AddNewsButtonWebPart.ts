@@ -10,7 +10,7 @@ import {
 import * as strings from 'AddNewsButtonWebPartStrings';
 import AddNewsButton from './components/AddNewsButton';
 import { IAddNewsButtonProps } from './components/IAddNewsButtonProps';
-import { sp, ItemUpdateResult, TemplateFileType, FileAddResult, ClientSidePage, Item } from '@pnp/sp';
+import { sp, ItemUpdateResult, ClientSidePage, Item, ClientSideText } from '@pnp/sp';
 
 export interface IAddNewsButtonWebPartProps {
   description: string;
@@ -73,8 +73,31 @@ export default class AddNewsButtonWebPart extends BaseClientSideWebPart<IAddNews
                       entityTypeName
                     ).then(
                       (result: ItemUpdateResult) => {
-                        // 成功
-                        resolve();
+                        
+                        // ページにセクションを追加
+                        let section = page.addSection();
+                        let column1 = section.addColumn(4);
+                        let column2 = section.addColumn(4);
+                        let column3 = section.addColumn(4);
+                        let column4 = section.addColumn(4);
+
+                        // セクション内1列目にテキストWebパーツを追加
+                        column1.addControl(new ClientSideText('this is test webpart for column1 !'));
+                        column2.addControl(new ClientSideText('this is test webpart for column2 !'));
+                        column3.addControl(new ClientSideText('this is test webpart for column3 !'));
+                        column4.addControl(new ClientSideText('this is test webpart for column4 !'));
+
+                        // 保存
+                        page.save().then(
+                          (result2: ItemUpdateResult) => {
+                            // 成功
+                            resolve();
+                          },
+                          (err) => {
+                            // 失敗
+                            reject(err);
+                          }
+                        );
                       }, 
                       (err) => {
                         // 失敗
