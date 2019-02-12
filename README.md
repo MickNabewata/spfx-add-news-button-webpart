@@ -27,7 +27,7 @@ This web part provide a button create a news.
 
 ### How to create a modern news page
 
-first, you should create a Client Side Page.  
+At first, you should create a Client Side Page.  
 And then, update properties of the page.  
 The minimum properties to update are below.  
 To update page properties, you shold get ListItemEntityTypeFullName first.  
