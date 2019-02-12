@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "add-news-button-client-side-solution",
+    "id": "6eb446cf-2f0d-4180-913d-79a6add86032",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/add-news-button.sppkg"
+  }
+}

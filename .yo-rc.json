@@ -1,0 +1,11 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "isCreatingSolution": true,
+    "environment": "spo",
+    "version": "1.7.1",
+    "libraryName": "add-news-button",
+    "libraryId": "6eb446cf-2f0d-4180-913d-79a6add86032",
+    "packageManager": "npm",
+    "componentType": "webpart"
+  }
+}
