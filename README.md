@@ -16,13 +16,13 @@ gulp
 
 This web part provide a button create a news.
 
-<div style="text-align:center;">image1:Add News Page Button</div>
+**image1:Add News Page Button**  
 <kbd><img src="https://raw.githubusercontent.com/MickNabewata/spfx-add-news-button-webpart/images/2.png" /></kbd>  
-
-<div style="text-align:center;">image2:You can find the news in _layouts/15/news.aspx</div>  
+  
+**image2:You can find the news in _layouts/15/news.aspx**  
 <kbd><img src="https://raw.githubusercontent.com/MickNabewata/spfx-add-news-button-webpart/images/3.png" /></kbd>  
-
-<div style="text-align:center;">image3:Created news page</div>  
+  
+**image3:Created news page**
 <kbd><img src="https://raw.githubusercontent.com/MickNabewata/spfx-add-news-button-webpart/images/4.png" /></kbd>  
 
 ### How to create a modern news page
