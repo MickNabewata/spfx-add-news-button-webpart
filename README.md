@@ -50,12 +50,7 @@ You can use PnP for implement this.
 ClientSidePage.addSection() method help you to add sections on your page.  
 CanvasSection.addColumn(factor : CanvasColumnFactorType) method is used to add columns in a section.  
 CanvasColumnFactorType is defined as below.  
-`
-    /**  
-    * Column size factor. Max value is 12 (= one column), other options are 8,6,4 or 0  
-    */  
-    export declare type CanvasColumnFactorType = 0 | 2 | 4 | 6 | 8 | 12;  
-`
+`export declare type CanvasColumnFactorType = 0 | 2 | 4 | 6 | 8 | 12;`  
   
 Note that the total value of CanvasColumnFactorType in one section should be 12.  
 Otherwise, you can not edit the created section on the web page.  
