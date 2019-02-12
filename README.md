@@ -1,26 +1,24 @@
 ## add-news-button
 
-This is where you include your WebPart documentation.
+This project is a sample code to create a modern news page.
+This sample shows you how to create a modern news page using SPFx or any other method.
 
 ### Building the code
 
 ```bash
-git clone the repo
+git clone https://github.com/MickNabewata/spfx-add-news-button-webpart.git
 npm i
 npm i -g gulp
 gulp
 ```
 
-This package produces the following:
+### How to create a modern news page
 
-* lib/* - intermediate-stage commonjs build artifacts
-* dist/* - the bundled script, along with other resources
-* deploy/* - all resources which should be uploaded to a CDN.
+first, you should create a Client Side Page.
+And then, update properties of the page.
+The minimum properties to update are below.
 
-### Build options
+- PromotedState
+This property should be updated to "2".
 
-gulp clean - TODO
-gulp test - TODO
-gulp serve - TODO
-gulp bundle - TODO
-gulp package-solution - TODO
+To update page properties, you shold get ListItemEntityTypeFullName first.
